@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Stack+Sans+Text:wght@200..700&display=swap');
+
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --rojo: #E5252E;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+    --card-size: 140px;
+}
+body {
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+}
+
+.login {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.form-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+}
+
+
+.logo {
+    width: 150px;
+    margin-bottom: 48px;
+    justify-self: center;
+    display: none;
+}
+
+.title {
+    font-size: var(--lg);
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.subtitle {
+    color: var(--very-light-pink);
+    font-size: var(--md);
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.input {
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    font-size: var(--md);
+    padding: 6px;
+    margin-bottom: 12px;
+}
+
+.primary-button {
+    background-color: var(--rojo);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+}
+
+.login-button {
+    margin-top: 14px;
+    margin-bottom: 30px;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--text-input-field);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    margin-bottom: 25px;
+}
+
+.email {
+    width: 100px;
+    height: 100px;
+}
+
+.not-receive {
+    color: var(--very-light-pink);
+    font-size: var(--ssm);
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.resend {
+    color: var(--rojo);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.form a {
+    color: var(--rojo);
+    font-size: var(--sm);
+    text-align: center;
+    display: block;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.signup-button {
+    background-color: var(--white);
+    color: var(--rojo);
+    border: 2px solid var(--rojo);
+}
+
+.info {
+    background-color: var(--text-input-field);
+    border-radius: 8px;
+    font-size: var(--md);
+    padding: 12px 6px;
+    margin: 0 0 12px 0;
+    color: var(--black);
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, var(--card-size));
+    gap: 26px;
+    place-content: center;
+}
+
+.product-card {
+    width: var(--card-size);
+}
+
+.product-card img {
+    width: var(--card-size);
+    height: var(--card-size);
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.product-info figure {
+    margin: 0;
+}
+
+.product-info figure img {
+    width: 35px;
+    height: 35px;
+}
+
+.product-info div p:nth-child(1) {
+    font-weight: bold;
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.product-info div p:nth-child(2) {
+    font-size: var(--sm);
+    margin-top: 0;
+    margin-top: 0;
+    color: var(--very-light-pink);
+}
+
+@media (max-width: 640px) {
+    :root {
+        --card-size: 140px;
+    }
+    .logo{
+        display: block;
+    }
+
+    .form-container {
+        width: 100%;
+        height: 100%;
+        padding: 40px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .form {
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .login-button {
+        margin-top: auto;
+    }
+}
