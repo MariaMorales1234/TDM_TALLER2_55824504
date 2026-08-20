@@ -196,25 +196,34 @@ body {
 }
 
 .menu-desktop {
-    width: 100px;
-    height: 150px;
+    right: 0;
+    width: 150px;
     margin: 0;
+    padding: 8px 0;
     border: 1px solid var(--very-light-pink);
     border-radius: 12px;
-    justify-content: flex-end;
     list-style: none;
-    font-size: var(--md);
-}
-
-.menu-desktop li {
-    margin: 7px;
-    margin-top: 15px;
 }
 
 .menu-desktop li a {
-    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
     color: var(--black);
+    text-decoration: none;
+    font-size: var(--md);
     font-weight: bold;
+    text-align: right;
+}
+
+.menu-desktop li.line {
+    height: 1px;
+    background: var(--very-light-pink);
+    margin: 8px;
+}
+
+.menu-desktop li:last-child a {
+    font-weight: 600;
+    font-size: var(--sm);
 }
 
 @media (max-width: 640px) {
