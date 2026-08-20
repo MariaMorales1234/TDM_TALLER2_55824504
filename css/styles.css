@@ -226,6 +226,43 @@ body {
     font-size: var(--sm);
 }
 
+.menu-mobile {
+    padding: 12px 0;
+    font-weight: bold;
+}
+
+.menu-mobile ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.separator {
+    height: 1px;
+    background: var(--very-light-pink);
+    margin: 8px;
+}
+
+.menu-mobile li {
+    display: block;
+    padding: 10px 20px;
+} 
+
+.menu-mobile li a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+.menu-mobile ul:nth-child(4) li{
+    font-size: var(--sm);
+}
+
+.menu-mobile ul:nth-child(4) li:first-child span {
+    font-weight: 500;
+    color: var(--very-light-pink);
+}
+
+
 @media (max-width: 640px) {
     :root {
         --card-size: 140px;
