@@ -258,7 +258,7 @@ body {
 }
 
 .menu-mobile ul:nth-child(4) li:first-child span {
-    font-weight: 500;
+    font-weight: 400;
     color: var(--very-light-pink);
 }
 
